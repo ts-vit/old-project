@@ -1,0 +1,11 @@
+{
+  "name": "Shop2",
+  "dependencies": {
+    "jquery": "1.11",
+    "normalize.css": "~3.0.3",
+    "modernizr": "~2.8.3",
+    "qtip2": "~2.2.1",
+    "malihu-custom-scrollbar-plugin": "~3.0.9",
+    "bxslider": "*"
+  }
+}

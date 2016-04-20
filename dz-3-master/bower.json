@@ -1,0 +1,12 @@
+{
+  "name": "portfolio",
+  "dependencies": {
+    "modernizr": "~2.8.3",
+    "normalize.css": "~3.0.3",
+    "jquery": "1.11",
+    "popup": "~0.0.1",
+    "qtip2": "~2.2.1",
+    "bpopup": "~0.11.0",
+    "jquery-placeholder": "~2.1.2"
+  }
+}

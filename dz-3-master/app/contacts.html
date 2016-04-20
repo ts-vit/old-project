@@ -1,0 +1,165 @@
+<!doctype html>
+<!--suppress ALL -->
+<html class="no-js" lang="ru">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Мои работы</title>
+
+    <link rel="apple-touch-icon" href="apple-touch-icon.png">
+    <!-- Place favicon.ico in the root directory -->
+    <link rel="stylesheet" href="bower/normalize.css/normalize.css"/>
+    <link rel="stylesheet" href="bower/qtip2/jquery.qtip.css">
+    <link rel="stylesheet" href="fonts/fira.css"/>
+    <link rel="stylesheet" href="styles/main.css"/>
+    <!-- build:js scripts/vendor/modernizr.js -->
+    <script src="bower/modernizr/modernizr.js"></script>
+    <script src="bower/jquery/dist/jquery.min.js"></script>
+    <script src="bower/qtip2/jquery.qtip.js"></script>
+    <script src="bower/jquery-placeholder/jquery.placeholder.min.js"></script>
+    <!-- endbuild -->
+</head>
+<body>
+<!--[if lt IE 7]>
+<p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade
+    your browser</a> to improve your experience.</p>
+<![endif]-->
+<div class="wrapper-page clearfix">
+    <div class="wrapp-header clearfix">
+        <header class="header">
+            <div class="header__logo">
+                <a href="" class="header__logo-link">
+                    <img src="images/logo.png" alt="Логотип" class="header__logo-img"/>
+                    <span class="header__logo-text">Сайт портфолио</span>
+                </a>
+            </div>
+            <div class="social">
+                <ul class="social__list">
+                    <li class="social__list-item">
+                        <a href="#" class="social__list-link-vk">В контакте</a>
+                    </li>
+                    <li class="social__list-item">
+                        <a href="#" class="social__list-link-tw">Твиттер</a>
+                    </li>
+                    <li class="social__list-item">
+                        <a href="#" class="social__list-link-fb">Фейсбук</a>
+                    </li>
+                    <li class="social__list-item">
+                        <a href="#" class="social__list-link-git">Гит</a>
+                    </li>
+                </ul>
+            </div>
+        </header>
+    </div>
+    <div class="wrapp-content clearfix">
+        <div class="wrapp-aside">
+            <aside class="asige">
+                <nav class="menu">
+                    <ul class="menu__list">
+                        <li class="menu__list-item ">
+                            <div class="wrapp">
+                                <a href="index.html" class="menu__list-link ">Обо мне</a>
+                            </div>
+                        </li>
+                        <li class="menu__list-item menu__list-item-1">
+                            <div class="wrapp">
+                                <a href="myworks.html" class="menu__list-link">Мои работы</a>
+                            </div>
+                        </li>
+                        <li class="menu__list-item menu__list-item-active-contacts">
+                            <div class="wrapp">
+                                <a href="contacts.html" class="menu__list-link">Связаться со мной</a>
+                            </div>
+                        </li>
+                    </ul>
+                </nav>
+                <address class="contacts">
+                    <div class="contacts__header">
+                        <span class="contacts__header-text">Контакты</span>
+                    </div>
+                    <ul class="contacts__list">
+                        <li class="contacts__list-item mail">
+                            <a href="mailto:ts-vit@mail.ru" class="contacts__list-link">
+                                <span class="contacts__list-text">ts-vit@mail.ru</span>
+                            </a>
+                        </li>
+                        <li class="contacts__list-item phone">
+                            <a href="tel:+79630112441" class="contacts__list-link">
+                                <span class="contacts__list-text">+79630112441</span>
+                            </a>
+                        </li>
+                        <li class="contacts__list-item skype">
+                            <a href="skype:ts-vit?chat" class="contacts__list-link">
+                                <span class="contacts__list-text">ts-vit</span>
+                            </a>
+                        </li>
+                    </ul>
+                </address>
+            </aside>
+        </div>
+        <div class="wrapp-main clearfix">
+            <section class="section">
+                <header class="contacts__form-header">
+                    <span class="contacts__form-header-text">
+                        У вас интересный проект? Напишите мне
+                    </span>
+                </header>
+                <div class="contact-form-wrap clearfix">
+                    <form action="" class="contact-form" name = "form1" id = "contact-me">
+                        <div class="contact-form__name-wrap clearfix">
+                            <div class="form__name-wrap">
+                                <div class="form__name">
+                                    Имя
+                                </div>
+                                <input type="text" class="form__name-input" placeholder="Как к вам обращаться" qtip-content = "Вы не ввели имя"/>
+                            </div>
+                            <div class="form__mail-wrap">
+                                <div class="form__mail">
+                                    Email
+                                </div>
+                                <input type="email" class="form__mail-input" placeholder="Куда мне писать" qtip-content = "Вы не ввели емайл" qtip-position="right"/>
+                            </div>
+                        </div>
+                        <div class="form__textarea-wrap">
+                            <div class="form__textarea-text">Сообщение</div>
+                            <textarea  class="form__textarea textarea" placeholder = "Кратко о чем суть" qtip-content = "Вы не ввели сообщение" qtip-position="right"></textarea>
+                        </div>
+                        <div class="form__capcha-wrap clearfix">
+                            <div class="form__capcha-header">Введите код указанный на картинке</div>
+                            <div class="form__capcha-img">
+                                <img src="images/AIqwer.png" alt="Капча"/>
+                            </div>
+                            <div class="form__capcha-img-text">
+                                <input type="text" placeholder="Введите текст" class="form__capcha-text" qtip-content = "Введите текст" qtip-position="right"/>
+                            </div>
+                        </div>
+                        <div class="form__button-wrap clearfix">
+                            <div class="button-wrap">
+                                <button class="submit-form" type="submit">Отправить</button>
+                            </div>
+                            <div class="button-wrap__right">
+                                <button class="clear-form" type="reset">Очистить</button>
+                            </div>
+
+                        </div>
+
+                    </form>
+                </div>
+            </section>
+        </div>
+    </div>
+
+</div>
+<footer class="footer clearfix">
+    <div class="footer__authorization">
+        <a href="autorization.html" class="footer__authorization-link">Авторизация</a>
+    </div>
+    <div class="footer__text-wrapp">
+        <span class="footer__text">&copy; 2015 Это мой сайт, пожалуйста не воруйте его</span>
+    </div>
+</footer>
+<script src="scripts/contacts.js"></script>
+</body>
+</html>

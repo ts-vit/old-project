@@ -1,0 +1,63 @@
+doctype html
+<!--[if IE 8]>
+<html class='no-js ie ie8' lang='ru-RU'>
+<![endif]-->
+<!--[if IE]>
+<html class='no-js ie' lang='ru-RU'>
+<![endif]-->
+<!--[if gt IE 8]><!-->
+<html class='no-js' lang='ru-RU'>
+<!--<![endif]-->
+head
+    meta(charset='utf-8')
+    meta(http-equiv='X-UA-Compatible', content='IE=edge')
+    // Сео
+    meta(name='description', content='')
+    meta(name='keywords', content='')
+    meta(name='author', content='')
+    // Иконки
+    link(rel='shortcut icon', href='favicon.ico', type='image/x-icon')
+    link(rel='icon', href='favicon.ico', type='image/x-icon')
+    block title
+        title Default title
+    // Стили
+    // build:css css/vendor.min.css
+    link(rel='stylesheet', href='/bower/normalize.css/normalize.css')
+    link(rel='stylesheet', href='/bower/malihu-custom-scrollbar-plugin/jquery.mCustomScrollbar.css')
+    // endbuild
+    // build:css css/styles.min.css
+    link(rel='stylesheet', href='css/styles.css')
+    // endbuild
+    // JS
+    script(src='js/vendor/modernizr.min.js')
+body
+    // begin content
+    .wrapper
+        .main-content
+            .container
+                .container__left
+                    include includes/_logo
+                    block aside
+                .container__right
+                    block main
+    // end content
+    a.to-top-btn(href='#') Наверх
+    // begin footer
+    include includes/_footer
+    // end footer
+    // begin js
+    // build:js js/vendor/vendor.min.js
+    script(src='/bower/jquery/dist/jquery.js')
+    script(src='/bower/jquery-mousewheel/jquery.mousewheel.js')
+    script(src='/bower/malihu-custom-scrollbar-plugin/jquery.mCustomScrollbar.js')
+    // endbuild
+    <!--[if IE 8]>
+    <script src='js/vendor/selectivizr.min.js'></script>
+    <![endif]-->
+    // build:js js/scripts.min.js
+    script(src='js/main.js')
+    script(src='js/slider.js')
+    script(src='js/form.js')
+    script(src='js/tooltip.js')
+    // endbuild
+    //end js
